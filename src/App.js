@@ -1,19 +1,11 @@
 import React from "react";
 import "./App.css";
-
+import Login from "./component/Login";
+import Info from "./component/info";
 function App() {
-  return (
-    <div className="App">
+  var umair = true;
 
-      <h1> Login Form</h1>
-
-      <form>
-        <input type="text" placeholder="username"/> <br />
-        <input type="password" placeholder="password"/> <br />
-        <input type="submit" /> <br />
-      </form>
-    </div>
-  );
+  return <div className="App">{umair ? <Login /> : <Info />}</div>;
 }
 
 export default App;
